@@ -11,6 +11,6 @@ I've learn recent weeks:
 
 ![show](images/currency-converterShow.gif)
 
-A FEW WORDS : I'm proud of double-way convertion method ?
+Here will gonna be a few words about my adventure with this project :)
 
 ### _Another step into the new, exciting future... ;)_
