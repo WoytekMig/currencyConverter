@@ -1,0 +1,13 @@
+.button {
+    width: 100%;
+    border-radius: 6px;
+    background-color: white;
+}
+
+.button:hover {
+    background-color: hsl(0, 3%, 79%);
+}
+
+.button:active {
+    background-color: hsl(0, 50%, 50%);
+}

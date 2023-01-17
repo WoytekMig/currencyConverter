@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/form.css" rel="stylesheet">
+    <link href="css/button.css" rel="stylesheet">
+    <script defer src="js/script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Archivo+Black&display=swap"
+        rel="stylesheet">
+
+    <title>Currency calculator</title>
+</head>
+
+<body>
+    <div class="mainContainer">
+        <form class="js-form">
+            <fieldset class="form">
+                <legend class="form__legend">
+                    Currency calculator
+                </legend>
+                <label>
+                    <p>
+                        <span class="form__text">
+                           Complete how much in
+                        </span>
+                        <select class="form__select js-currencyHeld" name="currencyHeld">
+                            <option>PLN</option>
+                            <option>EUR</option>
+                            <option>GBP</option>
+                            <option>USD</option>
+                        </select>
+                        <span class="form__text">
+                            do you have :
+                        </span>
+                        <input type="number" name="moneyHeld" class="form__input js-moneyHeld" min="0" step="0.01" required
+                            placeholder="Money to exchange">
+                    </p>
+                    <p>
+                        <span class="form__text">
+                            After the exchange in 
+                        </span>
+                        <select class="form__select js-currencyWanted" name="currencyWanted">
+                            <option>PLN</option>
+                            <option>EUR</option>
+                            <option>GBP</option>
+                            <option>USD</option>
+                        </select>
+                        <span class="form__text">
+                            you will have :
+                            <strong class="form__result js-result"></strong>
+                        </span>
+                    </p>
+                </label>
+            </fieldset>
+            <button class="button">Calculate</button>
+        </form>
+    </div>
+</body>
+
+</html>

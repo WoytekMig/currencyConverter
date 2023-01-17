@@ -1,0 +1,27 @@
+.form {
+    border-style: double;
+    border-width: 6px;
+    border-color: black;
+    margin-bottom: 5px;
+    border-radius: 6px;
+    padding: 30px;
+}
+
+.form__legend {
+    font-size: x-large;
+    letter-spacing: 5px;
+}
+
+.form__text {
+    display: inline-block;
+    padding: 10px;
+}
+
+.form__input {
+    max-width: 100px;
+}
+
+.form__result {
+    font-size: large;
+    letter-spacing: 2px;
+}
