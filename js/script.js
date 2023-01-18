@@ -1,16 +1,16 @@
-
-let currencyHeldElement = document.querySelector('.js-currencyHeld');
-let moneyHeldElement = document.querySelector('.js-moneyHeld');
-let currencyWantedElement = document.querySelector('.js-currencyWanted');
-let formElement = document.querySelector('.js-form');
-let resultElement = document.querySelector('.js-result');
+{
+const currencyHeldElement = document.querySelector('.js-currencyHeld');
+const moneyHeldElement = document.querySelector('.js-moneyHeld');
+const currencyWantedElement = document.querySelector('.js-currencyWanted');
+const formElement = document.querySelector('.js-form');
+const resultElement = document.querySelector('.js-result');
 
 formElement.addEventListener("submit", (event) => {
     event.preventDefault();
 
-    let moneyHeld = moneyHeldElement.value;
-    let currencyHeld = currencyHeldElement.value;
-    let currencyWanted = currencyWantedElement.value;
+    const moneyHeld = moneyHeldElement.value;
+    const currencyHeld = currencyHeldElement.value;
+    const currencyWanted = currencyWantedElement.value;
 
     let currencyHeldRate;
     switch (currencyHeld) {
@@ -67,3 +67,4 @@ formElement.addEventListener("submit", (event) => {
 
     resultElement.innerText = `${result.toFixed(2)} ${currencyWanted}`;
    });
+}

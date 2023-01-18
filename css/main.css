@@ -9,8 +9,10 @@ html {
 }
 
 .mainContainer {
-    max-width: 900px;
-    margin: auto;
-    padding: 70px;
+    padding: 40px 20px;
     font-family: 'Archivo Black', sans-serif;
+}
+
+.backgroundImage {
+    background-image: url("../images/currencyCalculatorBackground4.jpg");
 }
