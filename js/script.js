@@ -1,7 +1,4 @@
 {
-    const moneyHeldElement = document.querySelector('.js-moneyHeld');
-    const moneyHeld = +moneyHeldElement.value;
-
     const helloWorld = () => {
         console.log("Witam na zapleczu 😄!");
     };
@@ -14,6 +11,9 @@
         let currencyHeld = currencyHeldElement.value;
 
         switch (currencyHeld) {
+            case "PLN":
+                currencyHeldRate = 1;
+                break;
             case "EUR":
                 currencyHeldRate = 4.697;
                 break;
@@ -23,7 +23,7 @@
             case "USD":
                 currencyHeldRate = 4.401;
                 break;
-        };
+        }
 
         const currencyWantedElement = document.querySelector('.js-currencyWanted');
         let currencyWanted = currencyWantedElement.value;
@@ -43,42 +43,12 @@
                 break;
         };
 
-        if (currencyHeld == "PLN") {
-            result = moneyHeld / currencyWantedRate;
-        } else if (currencyHeld == "EUR" && (currencyWanted == "EUR" || currencyWanted == "PLN")) {
-            switch (currencyWanted) {
-                case "EUR":
-                    result = moneyHeld * 1;
-                    break;
-                case "PLN":
-                    result = moneyHeld * currencyHeldRate;
-                    break;
-            }
-        } else if (currencyHeld == "GBP" && (currencyWanted == "GBP" || currencyWanted == "PLN")) {
-            switch (currencyWanted) {
-                case "GBP":
-                    result = moneyHeld * 1;
-                    break;
-                case "PLN":
-                    result = moneyHeld * currencyHeldRate;
-                    break;
-            }
-        } else if (currencyHeld == "USD" && (currencyWanted == "USD" || currencyWanted == "PLN")) {
-            switch (currencyWanted) {
-                case "USD":
-                    result = moneyHeld * 1;
-                    break;
-                case "PLN":
-                    result = moneyHeld * currencyHeldRate;
-                    break;
-            }
-        } else {
-            result = moneyHeld * currencyHeldRate / currencyWantedRate;
-        };
+        result = moneyHeld * currencyHeldRate / currencyWantedRate;
 
         const resultElement = document.querySelector('.js-result');
         resultElement.innerText = `${result.toFixed(2)} ${currencyWanted}`;
-    }
+    };
+
     const onFormSubmit = (event) => {
         event.preventDefault();
         getResult();
@@ -91,5 +61,4 @@
     };
 
     init();
-
 }

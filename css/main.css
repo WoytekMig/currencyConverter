@@ -15,4 +15,5 @@ html {
 
 .backgroundImage {
     background-image: url("../images/currencyCalculatorBackground4.jpg");
+    background-repeat: no-repeat;  
 }
