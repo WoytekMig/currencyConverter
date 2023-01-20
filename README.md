@@ -4,7 +4,7 @@ Here's my another scope of work [**Currency converter** - feel free to check it 
 
 It shows how I practise skills in: 
 - [x] **HTML** (BEM convention)
-- [x] **CSS** (BEM convention)
+- [x] **CSS** (BEM convention)  
   and especially in: 
 - [x] **JS** (ES6)
 
