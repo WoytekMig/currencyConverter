@@ -10,7 +10,7 @@ and especially in:
 
 which I've learn recent weeks, during YouCode programmig course  :) Here's a little demo : 
 
-![show](images/currencyConverterShow.gif)
+![show](images/currencyCalculatorShow.gif)
 
 The main challenge was to implement code which let convert PLN to some other currency. I decided to extend this task, and let convert four currencies (PLN, EUR, GBP and USD) in any combination you want :) Then, even bigger challenge was to simplify that code, by using functions. I hope, I did pretty well... ;) You can tell me ! :) 
 
