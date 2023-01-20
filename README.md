@@ -1,16 +1,17 @@
 # Hello again everyone 😉
 
-Here's my another scope of work [**Currency-converter** - feel free to check it out :)](https://woytekmig.github.io/currencyConverter/)\
+Here's my another scope of work [**Currency converter** - feel free to check it out :)](https://woytekmig.github.io/currencyConverter/)\
+
 It shows how I practise skills in: 
 - [x] **HTML**  
 - [x] **CSS**  
 and especially in: 
 - [x] **JS**
 
-I've learn recent weeks:
+which I've learn recent weeks, during YouCode programmig course  :) Here's a little demo : 
 
-![show](images/currency-converterShow.gif)
+![show](images/currencyConverterShow.gif)
 
-Here will gonna be a few words about my adventure with this project :)
+The main challenge was to implement code which let convert PLN to some other currency. I decided to extend this task, and let convert four currencies (PLN, EUR, GBP and USD) in any combination you want :) Then, even bigger challenge was to simplify that code, by using functions. I hope, I did pretty well... ;) You can tell me ! :) 
 
 ### _Another step into the new, exciting future... ;)_
