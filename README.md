@@ -3,10 +3,10 @@
 Here's my another scope of work [**Currency converter** - feel free to check it out :)](https://woytekmig.github.io/currencyConverter/)
 
 It shows how I practise skills in: 
-- [x] **HTML**  
-- [x] **CSS**  
+- [x] **HTML**  (BEM convention)
+- [x] **CSS**  (BEM convention)
 and especially in: 
-- [x] **JS**
+- [x] **JS** (ES6)
 
 which I've learn recent weeks, during YouCode programmig course  :) Here's a little demo : 
 
