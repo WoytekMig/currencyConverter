@@ -9,39 +9,34 @@
 
         const currencyHeldElement = document.querySelector('.js-currencyHeld');
         let currencyHeld = currencyHeldElement.value;
-
-        switch (currencyHeld) {
-            case "PLN":
-                currencyHeldRate = 1;
-                break;
-            case "EUR":
-                currencyHeldRate = 4.697;
-                break;
-            case "GBP":
-                currencyHeldRate = 5.351;
-                break;
-            case "USD":
-                currencyHeldRate = 4.401;
-                break;
+        const currencyHeldRate = (currencyHeld) => {
+            switch (currencyHeld) {
+                case "PLN":
+                    return 1;
+                case "EUR":
+                    return 4.697;
+                case "GBP":
+                    return 5.351;
+                case "USD":
+                    return 4.401;
+            };
         }
 
         const currencyWantedElement = document.querySelector('.js-currencyWanted');
         let currencyWanted = currencyWantedElement.value;
 
-        switch (currencyWanted) {
-            case "PLN":
-                currencyWantedRate = 1;
-                break;
-            case "EUR":
-                currencyWantedRate = 4.697;
-                break;
-            case "GBP":
-                currencyWantedRate = 5.351;
-                break;
-            case "USD":
-                currencyWantedRate = 4.401;
-                break;
-        };
+        const currencyWantedRate = (currencyWanted) => {
+            switch (currencyWanted) {
+                case "PLN":
+                    return 1;
+                case "EUR":
+                    return 4.697;
+                case "GBP":
+                    return 5.351;
+                case "USD":
+                    return 4.401;
+            };
+        }
 
         result = moneyHeld * currencyHeldRate / currencyWantedRate;
 
