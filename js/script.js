@@ -8,7 +8,8 @@
         const moneyHeld = +moneyHeldElement.value;
 
         const currencyHeldElement = document.querySelector('.js-currencyHeld');
-        let currencyHeld = currencyHeldElement.value;
+        const currencyHeld = currencyHeldElement.value;
+
         const currencyHeldRate = (currencyHeld) => {
             switch (currencyHeld) {
                 case "PLN":
@@ -38,7 +39,7 @@
             };
         }
 
-        result = moneyHeld * currencyHeldRate / currencyWantedRate;
+        result = moneyHeld * currencyHeldRate(currencyHeld) / currencyWantedRate(currencyWanted);
 
         const resultElement = document.querySelector('.js-result');
         resultElement.innerText = `${result.toFixed(2)} ${currencyWanted}`;
